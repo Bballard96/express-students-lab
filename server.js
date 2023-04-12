@@ -30,12 +30,16 @@ app.get('/', function(req, res) {
 // })
 
 app.get('/students', function(req, res) {
+  console.log(students)
   res.render('students/index', {
     students: students
   })
 })
 
 
+app.get('/', function(req, res) {
+  res.redirect('/home')
+})
 // tell the app to listen on port 3000
 
 app.listen(3000, function() {
