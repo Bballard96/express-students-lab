@@ -1,0 +1,12 @@
+<body>
+  <h1>Students</h1>
+  <ul>
+    <% students.forEach(todo => { %>
+      <li>
+				<%= students.text %> 
+				- 
+				<%= students.done ? 'is a student' : 'not a student' %>
+			</li>
+    <% }) %>
+  </ul>
+</body>
